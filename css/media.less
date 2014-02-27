@@ -24,18 +24,19 @@
 
 	header#header.full .navbar-nav > .active > a{
 		border-color: @link-color;
-	}
 
-	header#header.full .navbar-nav > .active > a:hover{
-		.hover(background-color, @link-color);
-	}
+		&:hover{
+			.hover(background-color, @link-color);
+		}
 
-	header#header.full .navbar-nav > .active > a:active{
-		.active(background-color, @link-color);
+		&:active{
+			.active(background-color, @link-color);
+		}
 	}
 
 	header#header #menu{
-		min-height: 50px;
+		min-height: @header-height;
+		height: @header-height;
 		display: block;
 	}
 
@@ -44,8 +45,7 @@
 	}
 
 	header#header a.navbar-brand{
-		.null();
-		.padding-size(15px);
+		padding: 15px;
 	}
 
 	header#header ul.nav.navbar-nav{
@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 767px) {
+
+	header#header #menu{
+		height: auto;
+	}
 
 	header#header .navbar-collapse{
 		float: none;
