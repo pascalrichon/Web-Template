@@ -1,0 +1,16 @@
+/* If possible, divide your CSS in order to have LESS files with generic items (links, forms, etc...)
+and LESS files specific to a section (header, section1, ..., footer) */
+
+@import "utilities.less"; /* Any function / variable */
+@import "main.less"; /* Anything general (body, html, p, ...) */
+@import "link.less"; /* Links & buttons */
+@import "content.less"; /* Main structure*/
+
+/* @import "section.less"; */
+
+@import "header.less"; /* Specific to the header & menu */
+@import "banner.less"; /* Specific to the banner */
+@import "form.less"; /* Specific to forms */
+@import "table.less";
+@import "footer.less"; /* Specific to footer */
+@import "media.less"; /* Specific to responsive */

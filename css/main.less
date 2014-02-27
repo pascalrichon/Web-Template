@@ -1,0 +1,97 @@
+/* MAIN */
+
+* {
+	.null();
+} 
+
+html, body {
+    height: 100%; /* IE6: treaded as min-height*/
+    .font-size();
+    text-align: justify;
+}
+
+body{
+	color: @text-color;
+	background-color: @white-color;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif; /* Your title font */
+}
+
+body.fixed{
+	padding-top: @header-height + 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Merriweather", Helvetica, Arial, sans-serif; /* Your title font */
+	margin: 0;
+}
+
+.center h1, .center h2, .center h3, .center h4, .center h5, .center h6{
+	text-align: center;
+}
+
+
+h1{
+	.font-size(48px);
+	margin-bottom: 0;
+}
+
+h2{
+	.font-size(36px);
+	color: @grey-color;
+}
+
+h3{
+	.font-size(28px);
+}
+
+h4{
+	.font-size(20px);
+	margin-bottom: 5px;
+}
+
+h5{
+	.font-size(18px);
+}
+
+h6{
+	.font-size(16px);
+	font-weight: bold;
+}
+
+ul{
+	margin: 15px 0;
+	list-style: none;
+}
+
+li:before{
+	content: "\f101"; 
+    font-family: "FontAwesome";
+    margin-right: 10px;
+}
+
+strong{
+	font-weight: 900;
+}
+
+em{
+	color: lighten(@text-color, 50%);
+}
+
+pre, code{
+	.font-size(13px);
+	.padding-size();
+	.margin-size(20px);
+	color: @red-color;
+	.radius(0);
+	border: 1px solid lighten(@grey-color, 20%);
+	text-align: left;
+	background-color:  desaturate(lighten(@red-color, 37%), 70%);
+}
+
+section article{
+	.margin();
+}
+
+section{
+	.margin();
+}

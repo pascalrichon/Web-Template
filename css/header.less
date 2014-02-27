@@ -1,0 +1,187 @@
+/* HEADER */
+
+header#header #menu{
+	display: table;
+	min-height: @header-height;
+	margin: 0 auto;
+}
+
+header#header .container{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header#header .navbar{
+	border: none;
+}
+
+header#header .navbar-collapse{
+	padding: 0;
+}
+
+header#header li:before{
+	content: "";
+	margin: 0;
+	padding: 0;
+}
+
+header#header ul{
+	margin-left: 15px;
+}
+
+header#header a.navbar-brand{
+	.padding-size(8px, 14px);
+	display: block;
+	vertical-align: middle;
+}
+
+/* Header class="simple" */
+
+header#header.simple .container{
+	padding-bottom: 10px;
+}
+
+header#header.simple .navbar{
+	background-color: @background-color; 
+	.null();
+	.padding-size(15px, 0);
+	.radius(0);
+}
+
+header#header.simple .border-line{
+	display: block;
+	height: @header-height;
+	border-bottom: 2px solid @grey-color;
+}
+
+header#header.simple .navbar-toggle{
+	border: none;
+	border-color: @white-color;
+	.radius(2px);
+}
+
+header#header.simple .navbar-toggle .icon-bar{
+	background-color: @text-color;
+}
+
+header#header.simple .navbar-toggle{
+	border: 1px solid @background-color;
+}
+
+header#header.simple .navbar-toggle:hover{
+	.hover(background-color, @grey-color);
+}
+
+header#header.simple .navbar-toggle:active{
+	.active(background-color, @grey-color);
+}
+
+header#header.simple .navbar-nav{
+	margin-top: 0;
+}
+
+header#header.simple a.navbar-brand{
+	color: @link-color;
+	text-decoration: none;
+}
+
+header#header.simple .nav > li > a{
+	color: @text-color;
+	text-decoration: none;
+	margin-top: 5px;
+	padding: 10px 0;
+	.radius(2px);
+}
+
+header#header.simple .nav > li > a:hover{
+	background-color: @background-color;
+}
+
+header#header.simple .navbar-nav > .active > a{
+	background-color: @background-color;
+	color: @link-color;
+	font-weight: 900;
+}
+
+header#header.simple .navbar-nav > .active > a:hover{
+	text-decoration: none;
+}
+
+header#header.simple .navbar li a:hover, header#header.simple a.navbar-brand:hover{
+	/* .hover(background-color, @link-color);
+	.hover(border-color, @link-color); */
+	color: @link-color;
+	text-decoration: underline;
+}
+
+header#header.simple .navbar li a:active, header#header.simple a.navbar-brand:active{
+	/* .active(background-color, @link-color);
+	.active(border-color, @link-color); */
+}
+
+
+/* Header class="full" */
+
+header#header.full{
+	background-color: @link-color; 
+	.null();
+	.radius(0);
+}
+
+header#header.full .navbar{
+	.padding-size(6px, 0);
+}
+
+header#header.full a.navbar-brand{
+	color: @white-color;
+	text-decoration: none;
+	margin: 0;
+}
+
+header#header.full a.navbar-brand:hover{
+	.hover(background-color, @link-color);
+}
+
+header#header.full a.navbar-brand:active{
+	.active(background-color, @link-color);
+}
+
+header#header.full .navbar li a{
+	color: @white-color;
+	text-decoration: none;
+	.border-size(1px, solid, @link-color);
+	.padding-size(8px, 14px);
+}
+
+header#header.full .navbar li a:hover{
+	.hover(background-color, @link-color);
+}
+
+header#header.full .navbar-nav > .active > a{
+	background-color: @link-color;
+	.border-size(1px, solid, @white-color);
+	color: @white-color;
+}
+
+header#header.full .navbar-nav > .active > a:hover{
+	background-color: @link-color;
+}
+
+header#header.full .navbar-toggle .icon-bar{
+	background-color: @white-color;
+}
+
+header#header.full .navbar-toggle{
+	border: 1px solid @link-color;
+}
+
+header#header.full .navbar-toggle:hover{
+	.hover(background-color, @link-color);
+}
+
+header#header.full .navbar-toggle:active{
+	.active(background-color, @link-color);
+}
+
+
+

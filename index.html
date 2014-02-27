@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <title>TITLE</title>
+	    <link rel="icon" type="image/png" href="image/favicon.ico">
+
+	    <!-- CSS & LESS -->
+	    <!-- Bootstrap & Font Awesome -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Used for styling code -->
+		<link rel="stylesheet" href="css/prettify.css">
+		<!-- Loads the main css -->
+		<link rel="stylesheet/less" href="css/app.less">
+
+		<!-- Open Sans // Good for text -->
+	    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100|Open+Sans:400italic,900italic,400,900' rel='stylesheet' type='text/css'>
+
+		<!-- Source Sans pro // Good for text -->
+	    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700' rel='stylesheet' type='text/css'> -->
+
+	    <!-- TITLE FONT -->
+	    <!-- Merriweather // Good serif font for a title -->
+	    <link href='http://fonts.googleapis.com/css?family=Merriweather:900,300,300italic,900italic' rel='stylesheet' type='text/css'>
+
+	    <!-- Roboto Slab // Good serif font for a title -->
+	    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100' rel='stylesheet' type='text/css'> -->
+
+	    <!-- SCRIPT -->
+	    <!-- Use this script in order to allow LESS to compile into CSS -->
+	    <script src="script/less-1.6.2.min.js" type="text/javascript"></script>
+	    <!-- Use this script to anable stylesheet for code using <code class="class="prettyprint""></code> -->
+	    <!-- or <pre class="class="prettyprint""></code> -->
+
+
+	</head>
+
+	<!-- prettyPrint will run after the page is loaded -->
+	<body onload="prettyPrint();" class="fixed">
+		<div id="wrap">
+			<header id="header" class="full">
+				<nav id="menu" class="navbar clearfix" role="navigation">
+					<div class="container"> <!-- Delete this div if you want the top menu to fit the window width-->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menulist">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#windowtop" id="menubrand">Website name</a>
+						</div>
+
+			 			<!-- Brand and toggle get grouped for better mobile display -->
+			  		<div class="collapse navbar-collapse right" id="menulist">
+							<ul class="nav navbar-nav">
+								<li class="item">
+									<a href="#section1" class="smooth-link" id="menulink1">Link 1</a>
+								</li>
+
+								<li class="item">
+									<a href="#section2" class="smooth-link" id="menulink2">Link 2</a>
+								</li>
+
+								<li class="item">
+									<a href="#section3" class="smooth-link" id="menulink3">Link 3</a>
+								</li>
+
+								<li class="item">
+									<a href="#section4" class="smooth-link" id="menulink4">Link 4</a>
+								</li>
+
+								<li class="item">
+									<a href="https://www.google.fr" target="_blank" id="menulink5">External link</a>
+								</li>
+							</ul>
+						</div>
+						<div class="border-line"></div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="main" id="windowtop">
+				<!-- Uncomment this section if you want to add a banner -->
+				<!-- <section id="banner"></section> --> 
+
+				<section id="topsection">
+					<div class="container">
+						<div class="page-header">
+							<h1>Your main title</h1>
+							<h2>Any main subtitle</h2>
+						</div>
+					</div>
+				</section>
+
+
+				<section id="section1">
+					<div class="container">
+						<article>
+							<h3>Article with quote</h3>
+							<div class="row">
+  							<div class="col-md-6">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Aliquam, accumsan sed augue vitae, vulputate sagittis erat.</p>
+
+									<ul>
+										<li>Etiam ut egestas ligula.</li>
+										<li>Integer lac commodo.</li>
+										<li>Aliquam urna nisl, accumsan sed augue.</li>
+									</ul>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <a href="#">Etiam ut egestas ligula.</a> Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+								</div>
+								<div class="col-md-6">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae.</p>
+
+									<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum.</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="section2">
+					<div class="container">
+						<article>
+							<h3>Row with illustrative images and centered blocks</h3>
+							<div class="row center"> <!-- Add class="center" to center headings-->
+  							<div class="col-md-4">
+  								<img class="fit" src="image/image1.jpg" alt="Image 1">
+  								<h4>Colonne 1</h4>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <em>Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula.</em> Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button border-button">Simple button</a>
+  							</div>
+  							<div class="col-md-4">
+  								<img class="fit" src="image/image2.jpg" alt="Image 2">
+  								<h4>Colonne 2</h4>
+  								<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <strong>Nam lobortis dolor et quam sodales, quis ultrices augue molestie.</strong> Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat.Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button border-button">Simple button</a>
+  							</div>
+  							<div class="col-md-4">
+  								<img class="fit" src="image/image3.jpg" alt="Image 3">
+  								<h4>Colonne 3</h4>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. <a href="#">Etiam ut egestas ligula.</a> Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button border-button">Simple button</a>
+  							</div>
+  						</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="section3">
+					<div class="container">
+						<article>
+							<h3>Row with full buttons</h3>
+							<div class="row">
+  								<div class="col-md-6">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis.</p>
+								</div>
+								<div class="col-md-6">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae.</p>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row">
+  							<div class="col-md-4">
+  								<h4>Colonne 1</h4>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <em>Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula.</em> Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button full-button">Full button</a>
+  							</div>
+  							<div class="col-md-4">
+  								<h4>Colonne 2</h4>
+  								<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <strong>Nam lobortis dolor et quam sodales, quis ultrices augue molestie.</strong> Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat.Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button full-button">Full button</a>
+  							</div>
+  							<div class="col-md-4">
+  								<h4>Colonne 3</h4>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. <a href="#">Etiam ut egestas ligula.</a> Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+  								<a class="button full-button">Full button</a>
+  							</div>
+  						</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="section4">
+					<div class="container">
+						<article>
+							<h3>Code styling</h3>
+							<div class="row">
+  							<div class="col-md-12">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Aliquam, accumsan sed augue vitae, vulputate sagittis erat.</p>
+
+									<ul>
+										<li>Etiam ut egestas ligula.</li>
+										<li>Integer lac commodo.</li>
+										<li>Aliquam urna nisl, accumsan sed augue.</li>
+									</ul>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <a href="#">Etiam ut egestas ligula.</a> Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae.</p>
+
+									<!-- Don't bother with aligning div in pre or code -->
+									<p><pre class="prettyprint">/* Pretty printing styles. Used with prettify.js. */
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint { padding: 2px; border: 1px solid #888 }
+
+</pre>Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="section5">
+					<div class="container">
+						<article>
+							<h3>Form styling</h3>
+
+							<form role="form">
+
+								<div class="row">
+	  							<div class="col-md-3 col-xs-12">
+									  <div class="form-group">
+									  	<label for="name">First Name</label>
+									  	<input type="text" class="form-control" id="inputfirstname" placeholder="Enter your first name">
+									  </div>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-3 col-xs-12">
+									  <div class="form-group">
+									  	<label for="name">Last Name</label>
+									  	<input type="text" class="form-control" id="inputlastname" placeholder="Enter your last name">
+									  </div>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									  <div class="form-group">
+									  	<label for="name">Email</label>
+									  	<input type="email" class="form-control" id="inputemail" placeholder="Enter your email">
+									  </div>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									  <div class="form-group">
+									  	<label for="name">Password</label>
+									  	<input type="email" class="form-control" id="inputpassword" placeholder="Enter your password">
+									  </div>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									   <div class="form-group">
+									  	<label for="name">Password Confirmation</label>
+									  	<input type="email" class="form-control" id="inputpasswordconfirm" placeholder="Confirm your password">
+									  </div>
+									</div>
+								</div>
+
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> I agree with <a href="#">terms and conditions</a>
+							    </label>
+							  </div>
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> I agree with <a href="#">Star Wars</a>
+							    </label>
+							  </div>
+							</form>
+						</article>
+					</div>
+				</section>
+
+				<section id="section6">
+					<div class="container">
+						<article>
+							<h3>Form styling</h3>
+							<table class="table table-striped">
+								<thead>
+									<th>Cell 1</th>
+									<th>Cell 2</th>
+									<th>Anything</th>
+									<th class="tablecenter">Center</th>
+									<th class="tableright">Right</th>
+								</thead>
+								<tr>
+									<td>Cell 1</td>
+									<td>Cell 2</td>
+									<td>Cell 3</td>
+									<td class="tablecenter">Cell 4</td>
+									<td class="tableright"><a class="button border-button">Validate</a></td>
+								</tr>
+								<tr>
+									<td>Cell 1</td>
+									<td>Cell 2</td>
+									<td>Cell 3</td>
+									<td class="tablecenter">Cell 4</td>
+									<td class="tableright"><a class="button border-button">Validate</a></td>
+								</tr>
+								<tr>
+									<td>Cell 1</td>
+									<td>Cell 2</td>
+									<td>Cell 3</td>
+									<td class="tablecenter">Cell 4</td>
+									<td class="tableright"><a class="button border-button">Validate</a></td>
+								</tr>
+								<tr>
+									<td>Cell 1</td>
+									<td>Cell 2</td>
+									<td>Cell 3</td>
+									<td class="tablecenter">Cell 4</td>
+									<td class="tableright"><a class="button border-button">Validate</a></td>
+								</tr>
+								<tr>
+									<td>Cell 1</td>
+									<td>Cell 2</td>
+									<td>Cell 3</td>
+									<td class="tablecenter">Cell 4</td>
+									<td class="tableright"><a class="button border-button">Validate</a></td>
+								</tr>
+							</table>
+						</article>
+					</div>
+				</section>
+
+
+
+				
+			</div> <!-- END MAIN -->
+		</div> <!-- END WRAP -->
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 col-sm-12">
+						<h5>Utilities</h5>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-12">
+						<h5>Informations</h5>
+						Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti.</p><p>Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+					</div>
+
+					<div class="col-md-3 col-sm-12">
+						<h5>Need help ?</h5>
+						<p>Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+						<a href="#" class="button border-button">Click here</a>
+					</div>
+
+					<div class="col-md-3 col-sm-12 social">
+						<h5>Follow us</h5>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+							<li><a href="#"><i class="fa fa-twitter-square"></i>Twitter</a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square"></i>Google plus</a></li>
+						</ul>
+					</div>
+
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+			<p class="copyright">Copyright © Website name</p>
+		</footer>
+
+		<!--////////////////////////////////////////-->
+		<!-- SCRIPTS -->
+		<!--////////////////////////////////////////-->
+
+		<!-- Loads jquery -->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<!-- Loads Bootstrap and boostrap scripts-->
+	  <script src="script/bootstrap.min.js"></script>
+	  <script src="script/transition.js"></script>
+	  <script src="script/collapse.js"></script>
+	  <!-- Loads prettify, used for styling code -->
+	  <script src="script/prettify.js"></script>
+
+	  <!-- Use this one if you have a normal header -->
+	  <script src="script/smoothscroll.js"></script>
+
+	</body>
+</html>

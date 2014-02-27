@@ -1,0 +1,67 @@
+/* LINKS & BUTTONS */
+
+a, button{
+	color: @link-color;
+	text-decoration: underline;
+	.transition(all, 0.1s);
+
+	&:hover{
+		.hover(color, @link-color);
+		text-decoration: none;
+	}
+
+	&:active{
+		.active(color, @link-color);
+		text-decoration: none;
+	}
+}
+
+.button.full-button{
+	display: inline-block;
+	padding: 8px 20px;
+	color: @white-color;
+	background-color: @link-color;
+	text-decoration: none;
+	.radius(2px);
+
+	&:hover{
+		color: @white-color;
+		.hover(background-color, @link-color);
+		.hover(border-color, @link-color);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:active{
+		.active(border-color, @link-color);
+		.active(background-color, @link-color);
+	}
+}
+
+.button.border-button{
+	display: inline-block;
+	padding: 8px 20px;
+	border: 1px solid @link-color;
+	text-decoration: none;
+	.radius(2px);
+
+	&:hover{
+		color: @white-color;
+		.color(background-color, @link-color);
+		.color(border-color, @link-color);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:active{
+		.active(border-color, @link-color);
+		.active(background-color, @link-color);
+	}
+}
+
+.center .button{
+
+display: table;
+	margin: 0 auto;
+	text-align: center;
+}
