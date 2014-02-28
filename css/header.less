@@ -157,10 +157,15 @@ header#header.full .navbar li a:hover{
 	.hover(background-color, @link-color);
 }
 
+header#header.full .navbar li a:active{
+	.active(background-color, @link-color);
+}
+
 header#header.full .navbar-nav > .active > a{
 	background-color: @link-color;
 	.border-size(1px, solid, @white-color);
 	color: @white-color;
+	.radius(2px);
 }
 
 header#header.full .navbar-nav > .active > a:hover{

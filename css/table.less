@@ -6,7 +6,7 @@
 
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th{
-  background-color: darken(@background-color, 3%);
+  background-color: darken(@background-color, 4%);
 }
 
 .table > thead > tr > th,
@@ -16,11 +16,12 @@
 .table > tbody > tr > td,
 .table > tfoot > tr > td{
   vertical-align: middle;
+  border: none;
 }
 
 .table a.button{
   .padding-size(4px, 10px);
-  .margin-size(6px, auto);
+  .margin-size(3px, auto);
   text-align: center;
 }
 
@@ -30,4 +31,12 @@
 
 .table .tablecenter{
   text-align: center;
+}
+
+.table .tableleft{
+  text-align: left;
+}
+
+.table > thead > tr > th{
+  border: none;
 }

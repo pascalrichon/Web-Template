@@ -79,13 +79,28 @@ em{
 
 pre, code{
 	.font-size(13px);
-	.padding-size();
-	.margin-size(20px);
+	display: inline-block;
 	color: @red-color;
 	.radius(0);
-	border: 1px solid lighten(@grey-color, 20%);
 	text-align: left;
 	background-color:  desaturate(lighten(@red-color, 37%), 70%);
+	margin: 0 5px;
+	padding: 0 6px;
+}
+
+code{
+	border: 1px solid lighten(@red-color, 30%);
+}
+
+pre.prettyprint{
+	display: block;
+	.padding-size();
+	.margin-size(20px);
+	border: 1px solid lighten(@grey-color, 20%);
+}
+
+pre.prettyprint code{
+	border: none;
 }
 
 section article{

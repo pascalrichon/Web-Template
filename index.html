@@ -189,25 +189,25 @@
 							<h3>Code styling</h3>
 							<div class="row">
   							<div class="col-md-12">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Aliquam, accumsan sed augue vitae, vulputate sagittis erat.</p>
-
-									<ul>
-										<li>Etiam ut egestas ligula.</li>
-										<li>Integer lac commodo.</li>
-										<li>Aliquam urna nisl, accumsan sed augue.</li>
-									</ul>
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. <a href="#">Etiam ut egestas ligula.</a> Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula, eget tempus enim. Etiam ut mi pulvinar, vestibulum ipsum et, eleifend nulla. Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae.</p>
-
 									<!-- Don't bother with aligning div in pre or code -->
-									<p><pre class="prettyprint">/* Pretty printing styles. Used with prettify.js. */
-
-/* Put a border around prettyprinted code snippets. */
-pre.prettyprint { padding: 2px; border: 1px solid #888 }
-
-</pre>Nam lobortis dolor et quam sodales, quis ultrices augue molestie. Etiam ut egestas ligula. Integer lacinia commodo felis, id blandit nisl volutpat non. Suspendisse potenti. Aliquam urna nisl, accumsan sed augue vitae, vulputate sagittis erat. Etiam vehicula justo a ipsum semper suscipit. Ut aliquet elit a metus sagittis, ac bibendum orci viverra.</p>
+									<p>Use <code>class="prettyprint"</code> to use the google code style<pre class="prettyprint"><code>class Employee < Person
+  def initialize(fname, lname, position)
+    super(fname,lname)
+    @position = position
+  end
+  def to_s
+     super + ", #@position"
+  end
+  attr_writer :position
+  def etype
+     if @position == "CEO" || @position == "CFO"
+         "executive"
+     else
+         "staff"
+     end
+  end
+end</code></pre>
+</p>
 								</div>
 							</div>
 						</article>
@@ -224,7 +224,7 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
 								<div class="row">
 	  							<div class="col-md-3 col-xs-12">
 									  <div class="form-group">
-									  	<label for="name">First Name</label>
+									  	<label class="control-label" for="name">First Name</label>
 									  	<input type="text" class="form-control" id="inputfirstname" placeholder="Enter your first name">
 									  </div>
 									</div>
@@ -233,7 +233,7 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
 								<div class="row">
 	  							<div class="col-md-3 col-xs-12">
 									  <div class="form-group">
-									  	<label for="name">Last Name</label>
+									  	<label class="control-label" for="name">Last Name</label>
 									  	<input type="text" class="form-control" id="inputlastname" placeholder="Enter your last name">
 									  </div>
 									</div>
@@ -242,7 +242,7 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
 								<div class="row">
 	  							<div class="col-md-4 col-xs-12">
 									  <div class="form-group">
-									  	<label for="name">Email</label>
+									  	<label class="control-label" for="name">Email</label>
 									  	<input type="email" class="form-control" id="inputemail" placeholder="Enter your email">
 									  </div>
 									</div>
@@ -250,32 +250,77 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
 
 								<div class="row">
 	  							<div class="col-md-4 col-xs-12">
-									  <div class="form-group">
-									  	<label for="name">Password</label>
-									  	<input type="email" class="form-control" id="inputpassword" placeholder="Enter your password">
+									  <div class="form-group has-success has-feedback">
+									  	<label class="control-label" for="name">Password</label>
+									  	<input type="password" class="form-control" id="inputpassword" placeholder="Enter your password">
+									  	<span class="glyphicon glyphicon-ok form-control-feedback"></span>
 									  </div>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<span class="form-text-help success-text">Text about success</span>
 									</div>
 								</div>
 
 								<div class="row">
 	  							<div class="col-md-4 col-xs-12">
-									   <div class="form-group">
-									  	<label for="name">Password Confirmation</label>
-									  	<input type="email" class="form-control" id="inputpasswordconfirm" placeholder="Confirm your password">
+									   <div class="form-group has-warning has-feedback">
+									  	<label class="control-label" for="name">Password Confirmation</label>
+									  	<input type="password" class="form-control" id="inputpasswordconfirm" placeholder="Confirm your password">
+									  	<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+									  </div>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<span class="form-text-help warning-text">Text about warning</span>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									   <div class="form-group has-error has-feedback">
+									  	<label class="control-label" for="name">Password Confirmation</label>
+									  	<input type="password" class="form-control" id="inputpasswordconfirm" placeholder="Confirm your password">
+									  	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+									  </div>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<span class="form-text-help error-text">Text about error</span>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									   <div class="form-group has-info has-feedback">
+									  	<label class="control-label" for="name">Password Confirmation</label>
+									  	<input type="password" class="form-control" id="inputpasswordconfirm" placeholder="Confirm your password">
+									  	<span class="glyphicon glyphicon-info-sign form-control-feedback"></span>
+									  </div>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<span class="form-text-help info-text">Text about any info</span>
+									</div>
+								</div>
+
+								<div class="row">
+	  							<div class="col-md-4 col-xs-12">
+									  <div class="form-group">
+									  	<label class="control-label" for="name">Textarea</label>
+									  	<textarea rows="6" class="form-control" id="textarea" placeholder="Enter your text here"></textarea>
 									  </div>
 									</div>
 								</div>
 
 							  <div class="checkbox">
 							    <label>
-							      <input type="checkbox"> I agree with <a href="#">terms and conditions</a>
+							      <input type="checkbox"><span>I agree with <a href="#">terms and conditions</a></span>
 							    </label>
 							  </div>
 							  <div class="checkbox">
 							    <label>
-							      <input type="checkbox"> I agree with <a href="#">Star Wars</a>
+							      <input type="checkbox"><span>I agree with <a href="#">Star Wars</a></span>
 							    </label>
 							  </div>
+							  <button type="cancel" class="button border-button">Cancel</button>
+							  <a href="#" class="button full-button">Submit</a>
 							</form>
 						</article>
 					</div>
@@ -284,51 +329,62 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
 				<section id="section6">
 					<div class="container">
 						<article>
-							<h3>Form styling</h3>
+							<h3>Table styling</h3>
 							<table class="table table-striped">
 								<thead>
-									<th>Cell 1</th>
+									<th>Default align is left</th>
 									<th>Cell 2</th>
-									<th>Anything</th>
+									<th class="tableleft">Left</th>
 									<th class="tablecenter">Center</th>
 									<th class="tableright">Right</th>
 								</thead>
 								<tr>
 									<td>Cell 1</td>
 									<td>Cell 2</td>
-									<td>Cell 3</td>
+									<td class="tableleft">Cell 3</td>
 									<td class="tablecenter">Cell 4</td>
 									<td class="tableright"><a class="button border-button">Validate</a></td>
 								</tr>
 								<tr>
 									<td>Cell 1</td>
 									<td>Cell 2</td>
-									<td>Cell 3</td>
+									<td class="tableleft">Cell 3</td>
 									<td class="tablecenter">Cell 4</td>
 									<td class="tableright"><a class="button border-button">Validate</a></td>
 								</tr>
 								<tr>
 									<td>Cell 1</td>
 									<td>Cell 2</td>
-									<td>Cell 3</td>
+									<td class="tableleft">Cell 3</td>
 									<td class="tablecenter">Cell 4</td>
 									<td class="tableright"><a class="button border-button">Validate</a></td>
 								</tr>
 								<tr>
 									<td>Cell 1</td>
 									<td>Cell 2</td>
-									<td>Cell 3</td>
+									<td class="tableleft">Cell 3</td>
 									<td class="tablecenter">Cell 4</td>
 									<td class="tableright"><a class="button border-button">Validate</a></td>
 								</tr>
 								<tr>
 									<td>Cell 1</td>
 									<td>Cell 2</td>
-									<td>Cell 3</td>
+									<td class="tableleft">Cell 3</td>
 									<td class="tablecenter">Cell 4</td>
 									<td class="tableright"><a class="button border-button">Validate</a></td>
 								</tr>
 							</table>
+						</article>
+					</div>
+				</section>
+
+				<section id="section7">
+					<div class="container">
+						<article>
+							<h3>Other items</h3>
+
+							<div class="informative">
+							</div>
 						</article>
 					</div>
 				</section>
